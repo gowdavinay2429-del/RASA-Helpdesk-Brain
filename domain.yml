@@ -1,0 +1,153 @@
+version: "3.1"
+
+intents:
+  - greet
+  - request_it_help
+  - provide_problem_details
+  - help_computer_performance
+  - help_configure_email
+  - help_reset_password
+  - help_troubleshoot_network
+  - help_install_software
+  - help_hardware_issue
+  - nlu_fallback 
+  - out_of_scope
+  - help_vpn_issue
+  - help_wifi_issue
+  - help_shared_drive
+  - help_audio_issue
+  - help_display_issue
+  - help_charging_issue
+  - help_keyboard_issue
+  - help_trackpad_issue
+  - help_bluescreen
+  - help_auth_issue
+  - help_no_mails
+  - help_org_tree_mismatch
+  - help_mailbox_full
+  - help_onedrive_issue
+  - help_intranet_issue
+  - help_sharepoint_issue
+  - help_dl_creation
+  - help_o365_dlp
+  - help_intune_issue
+  - help_azure_ad_login
+  - affirm_issue_not_resolved
+  - affirm_resolved
+
+responses:
+  utter_greet:
+    - text: "Hello! I am your IT Helpdesk bot. How can i help you today....!"
+  
+  utter_ask_problem_details:
+    - text: "I see. What is the problem?"
+
+  utter_help_computer_performance:
+    - text: "To improve performance, try these steps:\n1. Restart your computer.\n2. Close unused applications.\n3. Run a virus scan.\n4. Check for software updates."
+
+  utter_help_configure_email:
+    - text: "To configure email on a new phone:\n1. Go to play store and download company portal > Add Account.\n2. Select 'work or school account ' \n3. Enter your full work email and password, and follow the on-screen prompts."
+
+  utter_help_reset_password:
+  - text: "To reset your work or school email password, follow these steps:
+            \n1.Go to the My Sign-ins dashboard at mysignins.microsoft.com/security-info.
+            \n2.Select Can't access your account? and enter your work or school email address or username.
+            \n3.Verify your identity by entering the characters displayed on the screen.
+            Follow the prompts to set up your security info and reset your password.
+            \n4.If this didn't worked you will need to contact them IT team for assistance. "
+
+  utter_help_troubleshoot_network:
+  - text: "If you have network issues:\n1. Try restarting your router.\n2. 'Forget' the Wi-Fi network and reconnect.\n3. If you're on VPN, try disconnecting and reconnecting.\nIf didn't worked update your drivers "
+
+  utter_help_install_software:
+  - text: "To install approved software:\n1. Open the 'Software Center' (Windows) or 'Company Portal' (Mac).\n2. Search for the application.\n3. Click 'Install'."
+
+  utter_help_hardware_issue:
+  - text: "For a non-working earphone jack:\n1. Test with a different pair of earphones to confirm it's the jack.\n2. Check for debris in the jack.\n3. Update your audio drivers via 'Device Manager'.\nThis often indicates a hardware problem; I can create a repair ticket if these steps fail."
+  
+  utter_default_fallback:
+  - text: "I'm sorry, i can't help you with that, please contact the IT team for further assistance"
+  
+  utter_help_vpn_issue:
+  - text: "Sorry to hear that. The most common VPN fix is to:\n1. Disconnect and reconnect.\n2. Restart your computer (this clears many network cache issues).\n3. Make sure your VPN client software is up to date.\nIf you still can't connect, please connect with IT team or raise ticket in KEKA."
+  
+  utter_help_wifi_issue:
+  - text: "For Wi-Fi issues, please try restarting your router and your computer. Also, try 'Forgetting' the network and re-adding it."
+
+  utter_help_shared_drive:
+  - text: "If you can't access a shared drive, please first ensure you are connected to the company VPN. If you are, try restarting your computer."
+
+  utter_help_audio_issue:
+  - text: "If your audio isn't working, please check that your device is not muted and that the correct output (speakers/headphones) is selected in your sound settings."
+
+  utter_help_display_issue:
+  - text: "For a display issue, please check that the brightness is not set to zero. You can also try connecting to an external monitor to see if the problem is with the screen itself."
+
+  utter_help_charging_issue:
+  - text: "If your laptop isn't charging, please make sure the power cable is securely connected to both the wall and the laptop. Also, inspect the cable for any visible damage."
+
+  utter_help_keyboard_issue:
+  - text: "For keyboard issues, please try restarting your computer, as this often fixes driver issues. You can also try cleaning the keyboard with compressed air."
+
+  utter_help_trackpad_issue:
+  - text: "If your trackpad isn't working, try restarting your computer. Also, check if you accidentally disabled it with a function key (like Fn + F7)."
+
+  utter_help_bluescreen:
+  - text: "A 'Blue Screen Error' is a critical system problem. Please try to restart your computer. If it happens again, please note the 'Stop Code' on the screen and contact IT."
+
+  # (Prompts: With required note)
+  utter_help_auth_issue:
+  - text: "For issues with Microsoft Authenticator, your MFA settings may need to be reset by an administrator. **Note: please contact the IT team with your RM approval**."
+
+  utter_help_no_mails:
+  - text: "If you are not receiving emails, your mailbox may be full or have a filter rule. **Note: please contact the IT team with your RM approval** so they can investigate your account."
+
+  utter_help_org_tree_mismatch:
+  - text: "To correct an Organization Tree mismatch, this must be updated in the central HR system. **Note: please contact the IT team with your RM approval** to submit a correction request."
+
+  utter_help_mailbox_full:
+  - text: "If your mailbox is full, you can try deleting your old emails. To request more storage space, **Note: please contact the IT team with your RM approval**."
+
+  utter_help_onedrive_issue:
+  - text: "For OneDrive syncing issues, this may require an account reset. **Note: please contact the IT team with your RM approval** to have them look into it."
+
+  utter_help_intranet_issue:
+  - text: "If you have an issue with an Intranet Channel, it may be a permissions problem. **Note: please contact the IT team with your RM approval** and let them know which channel you need access to."
+
+  utter_help_sharepoint_issue:
+  - text: "SharePoint issues are often related to permissions. **Note: please contact the IT team with your RM approval** and provide the link to the site you are having trouble with."
+
+  utter_help_dl_creation:
+  - text: "To create a new Distribution List (DL), a request must be submitted. **Note: please contact the IT team with your RM approval** and provide the desired name and member list."
+
+  utter_help_o365_dlp:
+  - text: "O365 DLP (Data Loss Prevention) issues are sensitive and must be handled by the security team. **Note: please contact the IT team with your RM approval** to review the policy."
+
+  utter_help_intune_issue:
+  - text: "Intune (MDM) issues can prevent your device from accessing company resources. This requires administrator review. **Note: please contact the IT team with your RM approval**."
+
+  utter_help_azure_ad_login:
+  - text: "Azure AD login issues must be resolved by an administrator. **Note: please contact the IT team with your RM approval** to have your account settings checked."
+
+  utter_keka_ticket_guide:
+  - text: |
+      If the above resolution steps can't help you, please raise a ticket in KEKA. To create a ticket in KEKA, follow these steps:
+      
+      1. **Log in to KEKA:** Open your web browser and go to the KEKA login page. Enter your credentials to log in.
+      2. **Navigate to the Helpdesk:** Once logged in, look for the "Helpdesk" or "Support" section in the main menu or dashboard.
+      3. **Create a New Ticket:**
+         - Click on the option to create a new ticket.
+         - Fill in the required details such as the subject, description of the issue, priority level, and any other relevant information.
+         - Attach any necessary files or screenshots that can help in resolving the issue.
+      4. **Submit the Ticket:** After filling in all the details, click on the "Submit" or "Create Ticket" button.
+      5. **Confirmation:** You should receive a confirmation message or email indicating that your ticket has been successfully created.
+      
+      If you encounter any issues while creating a ticket, please refer to the KEKA user guide or contact your IT support team for further assistance.
+
+  utter_glad_it_worked:
+  - text: "Great! I'm glad I could help."
+  - text: "Perfect! Let me know if you need anything else."
+
+actions:
+  - action_create_ticket  # This is our custom Python actionintents:
+  

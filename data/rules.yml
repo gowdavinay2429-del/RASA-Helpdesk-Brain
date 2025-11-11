@@ -1,0 +1,154 @@
+version: "3.1"
+rules:
+- rule: Respond to computer performance
+  steps:
+  - intent: help_computer_performance
+  - action: utter_help_computer_performance
+
+- rule: Respond to email setup
+  steps:
+  - intent: help_configure_email
+  - action: utter_help_configure_email
+
+- rule: Respond to password reset
+  steps:
+  - intent: help_reset_password
+  - action: utter_help_reset_password
+
+- rule: Respond to network issues
+  steps:
+  - intent: help_troubleshoot_network
+  - action: utter_help_troubleshoot_network
+
+- rule: Respond to software install
+  steps:
+  - intent: help_install_software
+  - action: utter_help_install_software
+
+- rule: Respond to hardware issue
+  steps:
+  - intent: help_hardware_issue
+  - action: utter_help_hardware_issue
+  
+- rule: Respond to Wi-Fi issues
+  steps:
+    - intent: help_wifi_issue
+    - action: utter_help_wifi_issue
+
+- rule: Respond to Shared Drive issues
+  steps:
+    - intent: help_shared_drive
+    - action: utter_help_shared_drive
+
+- rule: Respond to Audio_issues
+  steps:
+    - intent: help_audio_issue
+    - action: utter_help_audio_issue
+
+- rule: Respond to Display issues
+  steps:
+    - intent: help_display_issue
+    - action: utter_help_display_issue
+
+- rule: Respond to Charging issues
+  steps:
+    - intent: help_charging_issue
+    - action: utter_help_charging_issue
+
+- rule: Respond to Keyboard issues
+  steps:
+    - intent: help_keyboard_issue
+    - action: utter_help_keyboard_issue
+
+- rule: Respond to Trackpad issues
+  steps:
+    - intent: help_trackpad_issue
+    - action: utter_help_trackpad_issue
+
+- rule: Respond to Blue Screen
+  steps:
+    - intent: help_bluescreen
+    - action: utter_help_bluescreen
+
+- rule: Respond to Authenticator issues
+  steps:
+    - intent: help_auth_issue
+    - action: utter_help_auth_issue
+
+- rule: Respond to Not Receiving Mails
+  steps:
+    - intent: help_no_mails
+    - action: utter_help_no_mails
+
+- rule: Respond to Org Tree Mismatch
+  steps:
+    - intent: help_org_tree_mismatch
+    - action: utter_help_org_tree_mismatch
+
+- rule: Respond to Mailbox Full
+  steps:
+    - intent: help_mailbox_full
+    - action: utter_help_mailbox_full
+
+- rule: Respond to OneDrive issues
+  steps:
+    - intent: help_onedrive_issue
+    - action: utter_help_onedrive_issue
+
+- rule: Respond to Intranet issues
+  steps:
+    - intent: help_intranet_issue
+    - action: utter_help_intranet_issue
+
+- rule: Respond to SharePoint issues
+  steps:
+    - intent: help_sharepoint_issue
+    - action: utter_help_sharepoint_issue
+
+- rule: Respond to DL Creation
+  steps:
+    - intent: help_dl_creation
+    - action: utter_help_dl_creation
+
+- rule: Respond to O365 DLP
+  steps:
+    - intent: help_o365_dlp
+    - action: utter_help_o365_dlp
+
+- rule: Respond to Intune issues
+  steps:
+    - intent: help_intune_issue
+    - action: utter_help_intune_issue
+
+- rule: Respond to Azure AD Login
+  steps:
+    - intent: help_azure_ad_login
+    - action: utter_help_azure_ad_login
+
+- rule: Respond to VPN issues
+  steps:
+    - intent: help_vpn_issue
+    - action: utter_help_vpn_issue 
+
+- rule: User still has an issue
+  steps:
+  - intent: affirm_issue_not_resolved
+  - action: utter_keka_ticket_guide
+
+- rule: User's issue is resolved
+  steps:
+  - intent: affirm_resolved
+  - action: utter_glad_it_worked
+
+- rule: Handle fallback 
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default_fallback
+
+- rule: Handle out_of_scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_default_fallback
+
+     
+   

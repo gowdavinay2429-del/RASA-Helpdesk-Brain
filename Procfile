@@ -1,0 +1,1 @@
+web: rasa run --cors "*" -p $PORT

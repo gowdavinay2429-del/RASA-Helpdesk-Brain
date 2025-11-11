@@ -1,0 +1,227 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi 
+- intent: request_it_help
+  examples: |
+    - I need IT support
+    - My laptop is broken
+    - help me
+- intent: provide_problem_details
+  examples: |
+    - My screen is flickering
+    - I cannot connect to the VPN
+    - my mouse is not working
+    - the screen is black
+    - i can't login
+    - it won't turn on
+- intent: help_computer_performance
+  examples: |
+    - What steps can I take to improve my computer's performance?
+    - My computer is running slow
+    - How do I speed up my laptop?
+
+- intent: help_configure_email
+  examples: |
+    - How can I configure my email on a new phone device?
+    - setup email on new phone
+    - add my work email to my mobile
+
+- intent: help_reset_password
+  examples: |
+    - How do I reset my password?
+    - I forgot my password, how do I reset it?
+    - password reset steps
+
+- intent: help_troubleshoot_network
+  examples: |
+    - How can I troubleshoot network connectivity problems?
+    - I can't connect to the internet
+    - My wifi is not working
+
+- intent: help_install_software
+  examples: |
+    - Can you guide me through installing new software?
+    - How do I install a new program?
+    - software installation guide
+
+- intent: help_hardware_issue
+  examples: |
+    - my earphones jacks are not working
+    - my headphone jack is broken
+    - audio jack not working
+- intent: out_of_scope
+  examples: |
+    - can you order pizza
+    - what's the weather
+    - tell me a joke
+    - my name is bob
+    - agfsdhjghg
+    - qwertyui
+    - asdfghjkl
+    - ghat are you doing
+    - im stuck
+    - what are you doing?    
+
+- intent: help_vpn_issue
+  examples: |
+    - I can't connect to the VPN
+    - my vpn is not working
+    - how do I troubleshoot vpn connection?
+    - vpn error    
+
+- intent: help_wifi_issue
+  examples: |
+    - Wi-Fi Connection Issue
+    - I can't connect to the wifi
+    - my wifi is not working
+    - wireless connection problem
+
+- intent: help_shared_drive
+  examples: |
+    - Unable to Access Shared Drive
+    - I can't open the shared drive
+    - shared folder is not accessible
+    - access denied to network drive
+
+- intent: help_audio_issue
+  examples: |
+    - Audio is not working
+    - I have no sound
+    - my speakers are not working
+    - can't hear anything
+
+- intent: help_display_issue
+  examples: |
+    - Display Issue
+    - my screen is blank
+    - the display is flickering
+    - monitor is not working
+
+- intent: help_charging_issue
+  examples: |
+    - Charging Issue
+    - my laptop is not charging
+    - the battery isn't charging
+    - charger plugged in but not charging
+
+- intent: help_keyboard_issue
+  examples: |
+    - Keyboard Issue
+    - my keyboard is not working
+    - keys are not typing
+    - keyboard problem
+
+- intent: help_trackpad_issue
+  examples: |
+    - Trackpad is not working
+    - my mouse pad is broken
+    - touchpad not responding
+    - laptop mouse isn't working
+
+- intent: help_bluescreen
+  examples: |
+    - Blue Screen Error
+    - I got a blue screen
+    - my computer crashed with a blue screen
+    - BSOD error
+
+- intent: help_auth_issue
+  examples: |
+    - Authentication Issue in microsoft authenticator
+    - my authenticator app is not working
+    - mfa approval not coming
+    - authenticator issue
+
+- intent: help_no_mails
+  examples: |
+    - Not Receiving Mails
+    - I am not getting new emails
+    - my outlook is not receiving mail
+    - email is not coming
+
+- intent: help_org_tree_mismatch
+  examples: |
+    - Organization Tree Mismatch
+    - my manager is wrong in the org tree
+    - org structure is incorrect
+    - reportee details are wrong
+
+- intent: help_mailbox_full
+  examples: |
+    - Mailbox is Full
+    - my email storage is full
+    - i can't send email because mailbox is full
+    - mailbox quota exceeded
+
+- intent: help_onedrive_issue
+  examples: |
+    - OneDrive Issue
+    - onedrive is not syncing
+    - problem with onedrive
+    - cannot access onedrive
+
+- intent: help_intranet_issue
+  examples: |
+    - Intranet Channel Issue
+    - i can't access the intranet
+    - intranet portal is down
+    - company intranet issue
+
+- intent: help_sharepoint_issue
+  examples: |
+    - SharePoint Issue
+    - i can't access sharepoint
+    - sharepoint site is not loading
+    - problem with sharepoint
+
+- intent: help_dl_creation
+  examples: |
+    - DL Creation
+    - I need a new Distribution List
+    - how to create a DL
+    - request for new DL
+
+- intent: help_o365_dlp
+  examples: |
+    - O365 DLP
+    - data loss prevention issue
+    - dlp policy blocked my email
+    - o365 dlp alert
+
+- intent: help_intune_issue
+  examples: |
+    - Intune Issue
+    - my device is not compliant in Intune
+    - MDM issue
+    - intune enrollment failed
+
+- intent: help_azure_ad_login
+  examples: |
+    - Azure AD Login Issue
+    - i can't login to azure
+    - azure ad login failed
+    - problem with azure active directory
+- intent: affirm_issue_not_resolved
+  examples: |
+    - issue still didn't resolved
+    - still facing issue
+    - that didn't work
+    - it's still broken
+    - no, that didn't help
+    - not fixed
+    - no 
+    - i can't find it 
+
+- intent: affirm_resolved
+  examples: |
+    - that fixed it
+    - yes it worked
+    - thanks it's resolved
+    - all good now
+    - it's fixed
+    - resolved
